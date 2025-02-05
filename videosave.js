@@ -60,6 +60,8 @@ function createDownloadButton() {
             if (videoSrc) {
                 const link = document.createElement('a');
                 link.href = videoSrc;
+                link.target = '_blank';
+                
                 link.click();
             } else {
                 console.error('Video file is not exist.');
